@@ -3,7 +3,7 @@
 The main differences from the TE annotation of the inbred line B73 in [Jiao et al., 2017](https://www.nature.com/articles/nature22971), [maize_v4_te_annotation](https://github.com/mcstitzer/maize_v4_TE_annotation) are:
 
 - We add individual copies to existing families using the [80-80-80 rule](https://www.nature.com/articles/nrg2165).
-	- in the interest of file size, fastas of existing families are not included in this repository. They can be generated from the B73v4 TE gff [here](ftp://ftp.gramene.org/pub/gramene/CURRENT_RELEASE/gff3/zea_mays/repeat_annotation/) using bedtools.
+	- in the interest of file size, fastas of existing families are not included in this repository. They can be generated from the B73v4 TE gff, ftp://ftp.gramene.org/pub/gramene/CURRENT_RELEASE/gff3/zea_mays/repeat_annotation/ ,  using bedtools.
 	- TEs that lack a family are clustered into new (W22-specific) families.
 
 - We do not run detectMITE on the W22 assembly. Instead, we use detectMITE results from B73 as queries for target_mTEA searches for TIRs and TSDs.
