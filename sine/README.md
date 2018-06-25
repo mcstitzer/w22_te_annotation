@@ -22,8 +22,5 @@ These families are clustered with [Maize TE Consortium](http://www.maizetedb.org
    4. runs `generate_gff_SINE.R` to make a final gff `W22.RST.gff3`. Also outputs `W22.RST.gffname.fastaname.txt` for easier mapping between the original sinefinder fasta and new names.
 
 
-## get a nice fasta
-
-once this is all done, run `python switch_fasta_names.py W22-matches.noTSD.fa W22.RST.gffname.fastaname.txt > W22.RST.fa` to get fastas, and make B73 and W22 fusion here `cat RST.B73v4.fa W22.RST.fa > ../../ph207/sine/RST.B73v4.W22.fa`
 
 
