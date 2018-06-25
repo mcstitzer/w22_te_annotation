@@ -18,15 +18,13 @@ We use the 808080 rule ([Wicker et al., 2007](http://www.nature.com/nrg/journal/
 
 In the ```families``` directory:
 
-- `cluster_families_LTR.sh` runs the initial allvsall vsearch of 5' LTRs and then goes through silix clustering of sequences
-
-- `cluster_families_MTEC.sh` finds the closest match of each complete element to a [MTEC](http://maizetedb.org) consensus
+- `add_tes_to_existing_families.sh` finds TEs that are not assigned to a B73 family, and clusters them based on allvsall vsearch of 5' LTRs to assign new family names
 
 ## Combining all outputs
 
-We assign superfamily and family names to each copy, return all sequences to the coordinates of the original genome, and output a gff3 of all LTR copies.
+We assign superfamily and family names to each copy, return all sequences to the coordinates of the original genome, and output a gff3 of all LTR copies. 
 
-- `Rscript combine_all_gffs_and_assign_fams.R` 
+- `../combine_all_LTRs.R` does this, up one directory because relative paths are coded for this. 
 
 	
 
